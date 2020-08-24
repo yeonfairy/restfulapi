@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: test
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: nuriapp
+Implementation-Vendor-Id: com.example
+Build-Jdk: 1.8.0_74
+Implementation-URL: https://spring.io/projects/spring-boot/test
+Created-By: Maven Integration for Eclipse
+

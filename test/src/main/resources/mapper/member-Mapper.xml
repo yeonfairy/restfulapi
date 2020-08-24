@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.test.dao.ProductDAO">
+
+	 <select id="selectMember"   resultType="com.example.test.dto.ProductDTO" >
+   
+      <![CDATA[ 
+      select * from  test.inventory_tbl
+      ]]> 
+         
+ </select>
+ <insert id="InsertMember" parameterType="com.example.test.dto.ProductDTO" >
+   <![CDATA[  
+      insert  into  test.inventory_tbl (id,productName,amount,price,remark)
+      values ( seq2.nextval, #{productName}, #{amount}, #{price}, #{remark} )
+   ]]>     
+ </insert>
+
+</mapper>
